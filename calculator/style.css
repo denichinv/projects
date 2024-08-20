@@ -1,0 +1,139 @@
+/* Center the calculator on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the calculator container */
+  .calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  /* Style the input fields and buttons */
+  .calculator input,
+  .calculator button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    margin: 8px;
+  }
+  
+  /* Style the input fields */
+  .calculator input {
+    background-color: #f5f5f5;
+    padding: 8px 12px;
+    width: 170px;
+    height: 20px;
+  }
+  
+  /* Style the buttons */
+  .calculator button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .calculator button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the operator buttons */
+  .calculator .operators button {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .calculator .operators button:hover {
+    background-color: #495057;
+  }
+  
+  /* Style the result display */
+  #result {
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: auto;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .calculator {
+      padding: 28px;
+    }
+  
+    .calculator input,
+    .calculator button {
+      width: 60px;
+      height: 35px;
+      font-size: 14px;
+      margin: 6px;
+    }
+  
+    #result {
+      font-size: 16px;
+      padding: 10px 14px;
+    }
+  }
+  
+  /* Add hover and focus effects to inputs and buttons */
+  .calculator input:hover,
+  .calculator input:focus,
+  .calculator button:hover,
+  .calculator button:focus {
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add transition effects to inputs and buttons */
+  .calculator input,
+  .calculator button {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Define custom CSS variables */
+  :root {
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --secondary-color: #6c757d;
+    --secondary-color-hover: #495057;
+    --background-color: #f0f0f0;
+    --input-background: #f5f5f5;
+    --font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  /* Apply custom variables to the body and buttons */
+  body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+  }
+  
+  .calculator button {
+    background-color: var(--primary-color);
+  }
+  
+  .calculator button:hover,
+  .calculator button:focus {
+    background-color: var(--primary-color-hover);
+  }
+  
+  .calculator .operators button {
+    background-color: var(--secondary-color);
+  }
+  
+  .calculator .operators button:hover,
+  .calculator .operators button:focus {
+    background-color: var(--secondary-color-hover);
+  }

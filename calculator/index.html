@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main calculator container -->
+    <div class="calculator">
+        <!-- Input fields for the two operands -->
+        <input type="number" id="operand1" placeholder="Enter first number"/>
+        <div class="operators">
+            <!-- Buttons for the arithmetic operations -->
+            <button id="add">+</button>
+            <button id="subtract">-</button>
+            <button id="multiply">*</button>
+            <button id="divide">/</button>
+        </div>
+        <input type="number" id="operand2" placeholder="Enter second number">
+        <!-- Buttons for calculation and clearing -->
+        <button id="calculate">Calculate</button>
+        <button id="clear">Clear</button>
+        <!-- Display for the result -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="./main.js"></script>
+</body>
+</html>
