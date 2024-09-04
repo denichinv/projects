@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // ========================
-  // DOM Elements Selection
-  // ========================
 
-  // Get references to input fields and buttons
+  // DOM Elements Selection
   const operand1 = document.getElementById("operand1");
   const operand2 = document.getElementById("operand2");
   const addButton = document.getElementById("add");
@@ -14,15 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultDisplay = document.getElementById("result");
   const clearButton = document.getElementById("clear");
 
-  // ========================
-  // Calculation Function
-  // ========================
+  // Calculation Functions
 
-  /**
-   * Performs arithmetic operations based on the specified type.
-   * @param {string} operation - The type of operation ('add', 'subtract', 'multiply', 'divide').
-   * @returns {number|string} The result of the operation or an error message.
-   */
   function performCalculation(operation) {
     // Parse input values as floating-point numbers
     const num1 = parseFloat(operand1.value);
@@ -32,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isNaN(num1) || isNaN(num2)) {
       return "Invalid input. Please enter valid numbers";
     }
-
+    
     // Perform the operation based on the specified type
     switch (operation) {
       case "add":
@@ -51,11 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return "Invalid operation";
     }
   }
-
-  // ========================
-  // Button Event Listeners
-  // ========================
-
+ 
   // Event listener for the "Add" button
   addButton.addEventListener("click", () => {
     resultDisplay.textContent = performCalculation("add");
@@ -88,11 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     operand2.value = "";
     resultDisplay.textContent = "";
   });
-
-  // ========================
-  // Keyboard Shortcuts
-  // ========================
-
   // Event listener for keyboard shortcuts
   document.addEventListener("keydown", (event) => {
     switch (event.key) {
