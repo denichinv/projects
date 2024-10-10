@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Unit Convertor</h1>
+
+        <div id="input"> 
+      <input type="number" placeholder="Convert From" id="inputNum">
+      <select name="unit" id="convertFrom" class="dropdownMenu">
+
+        <option>Kilograms</option>
+        <option>Grams</option>
+        <option>Pounds</option>
+        <option>Meters</option>
+        <option>Kilometers</option>
+        <option>Centimeters</option>
+        <option>Feet</option>
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
+        <option>Kelvin</option>
+        
+      </select>
+     <b> =></b> 
+      <select name="unit" id="convertTo" class="dropdownMenu">
+        <option>Kilograms</option>
+        <option>Grams</option>
+        <option>Pounds</option>
+        <option>Meters</option>
+        <option>Kilometers</option>
+        <option>Centimeters</option>
+        <option>Feet</option>
+        <option>Celsius</option>
+        <option>Fahrenheit</option>
+        <option>Kelvin</option>
+        
+    </select> 
+        </div>
+
+
+        <div id="output">
+            <span id="result" aria-placeholder="result">Result will be displayed here</span>
+          
+        </div>
+
+        <div id="submitButton">
+            <button type="button" id="convertButton"> Convert</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
