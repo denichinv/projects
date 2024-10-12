@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Methods</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="elementInput" placeholder="Enter activity">
+            <button onclick="addElement()">Add Activity</button>
+            <button onclick="removeElement('first')">Remove First</button>
+            <button onclick="removeElement('last')">Remove Last</button>
+        </div>
+        <div class="array-container">
+            <h2>Things To-Do: </h2>
+            <div id="arrayElements"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
