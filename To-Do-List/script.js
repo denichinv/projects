@@ -18,7 +18,7 @@ function addElement() {
     array.push(elementInput);
     displayArray();
   } else {
-    alert("Please.Enter valid element!");
+    alert("Please enter a valid activity!");
   }
 }
 
@@ -29,10 +29,10 @@ function removeElement(type) {
     } else if (type === "last") {
       array.pop();
     } else {
-      alert("Invalid operation");
+      alert("Invalid operation!");
     }
   } else {
-    alert("Array is empty");
+    alert("List is empty!");
   }
   displayArray();
 }
