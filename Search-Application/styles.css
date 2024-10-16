@@ -1,67 +1,84 @@
+html {
+    background-image: url('https://images.pexels.com/photos/775031/pexels-photo-775031.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
-    background-color: #f0f4f8;
-    color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
-    max-width: 700px;
-    margin: auto;
-    padding: 30px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid #007bff;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
 }
 
-.array-container {
-    margin-top: 25px;
-    padding: 15px;
-    background-color: #f5f7fa;
-    border: 1px solid #e0e4e8;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-input {
-    margin-bottom: 30px;
+h1 {
+    color: #2b2b2b;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
 }
 
-.input-group {
-    margin-top: 25px;
-}
-
-.input-group input[type="text"] {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    width: calc(100% - 30px);
+#inputField {
+    width: calc(100% - 120px);
+    height: 30px;
+    padding: 5px;
     margin-right: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
 }
 
-.input-group input[type="text"]:focus {
+#inputField:focus {
     outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    border: 2px solid #007bff;
 }
 
-.input-group button {
-    padding: 12px 20px;
-    font-size: 16px;
+#searchButton {
     border: none;
-    background-color: #007BFF;
+    border-radius: 4px;
     color: white;
-    border-radius: 8px;
+    background-color: rgb(241, 88, 88);
+    padding: 10px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.input-group button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#searchButton:hover {
+    background-color: rgb(204, 76, 76);
 }
 
+#resultContainer {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+#resultContainer li {
+    padding: 5px;
+    margin: 5px 0;
+    list-style: none;
+}
