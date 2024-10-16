@@ -66,6 +66,7 @@ h1 {
 }
 
 #resultContainer {
+    visibility: hidden;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     border: 1px solid #007bff;
