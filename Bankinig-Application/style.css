@@ -1,0 +1,81 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 20px;
+    background-color: rgb(220, 215, 215);
+
+}
+#main{
+    background-color: white;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(84, 80, 80);
+}
+.form-group{
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 400px; 
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(35, 121, 249, 0.9);
+    border-radius: 5px; 
+}
+button {
+    margin: 5px; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    background-color: rgba(0, 123, 255, 0.8); 
+    font-size: 16px; 
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(3, 102, 208, 0.8); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+input{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 376px; 
+    margin: 10px;
+    padding: 10px;
+
+}
+label{
+    padding-left: 10px;
+    font-size: large;
+}
+
+#resultContainer{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(220, 215, 215);
+width: 375px;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(65, 61, 61);
+
+}
